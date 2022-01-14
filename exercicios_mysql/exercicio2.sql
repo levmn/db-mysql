@@ -4,13 +4,13 @@ use db_ecommerce;
 
 -- determinar 5 atributos.
 create table tb_produtos(
-	id bigint auto_increment,
-	nome varchar(50) not null,
-	marca varchar(50) not null,
-	quant int not null,
-	categoria varchar(50) not null,
-	valor decimal(6, 2) not null,	
-	primary key (id)
+id bigint auto_increment,
+nome varchar(50) not null,
+marca varchar(50) not null,
+quant int not null,
+categoria varchar(50) not null,
+valor decimal(6, 2) not null,	
+primary key (id)
 );
 
 -- popular a tabela com até 8 dados.

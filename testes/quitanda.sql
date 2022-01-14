@@ -10,11 +10,11 @@ use db_quitanda;
 -- primary key é o que vai conectar as tabelas umas as outras
 
 create table tb_produtos(
-	id bigint auto_increment,
-    nome varchar(255) not null, 
-    quantidade int,
-    preco decimal not null,
-    primary key (id)
+id bigint auto_increment,
+nome varchar(255) not null, 
+quantidade int,
+preco decimal not null,
+primary key (id)
 );
 
 -- alter table altera a estrutura

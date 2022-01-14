@@ -4,13 +4,13 @@ use db_rh;
 
 -- determinar 5 atributos.
 create table tb_funcionarios(
-	id bigint auto_increment,
-    nome varchar(50) not null,
-	nasc date not null,
-	cargo varchar(50) not null,
-    sal decimal(6, 3) not null,
-    cargaH int not null,
-    primary key (id)
+id bigint auto_increment,
+nome varchar(50) not null,
+nasc date not null,
+cargo varchar(50) not null,
+sal decimal(6, 3) not null,
+cargaH int not null,
+primary key (id)
 );
 
 -- popular a tabela com até 5 dados.

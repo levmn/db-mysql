@@ -4,13 +4,13 @@ use db_escola;
 
 -- determinar 5 atributos.
 create table tb_estudantes(
-	id bigint auto_increment,
-	nome varchar(50) not null,
-	nasc date not null,
-	turma varchar(2) not null,
-	periodo varchar(50) not null,
-	nota decimal(2, 1) not null,	
-	primary key (id)
+id bigint auto_increment,
+nome varchar(50) not null,
+nasc date not null,
+turma varchar(2) not null,
+periodo varchar(50) not null,
+nota decimal(2, 1) not null,	
+primary key (id)
 );
 
 -- popular a tabela com até 8 dados.
