@@ -47,7 +47,7 @@ select * from tb_produtos;
 select * from tb_produtos where preco > 50.00;
 
 -- faça um select trazendo produtos com valor entre 3 e 60 reais.
-select * from tb_produtos where preco  between 3.00 and 60.00;
+select * from tb_produtos where preco between 3.00 and 60.00;
 
 -- faça um select utilizando LIKE buscando os produtos com a letra b.
 select * from tb_produtos where nome like "%b%";
