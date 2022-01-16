@@ -17,6 +17,8 @@ insert into tb_classe (classe, elemento) values ("assassino", "eletro");
 insert into tb_classe (classe, elemento) values ("paladino", "fogo");
 insert into tb_classe (classe, elemento) values ("bardo", "ar");
 
+select * from tb_classe;
+
 -- determine 5 atributos do personagem.
 create table tb_personagem(
 id bigint not null auto_increment,
@@ -52,8 +54,8 @@ select * from tb_personagem where nome like "%c%";
 
 -- faça um um select com inner join entre tabela classe e personagem.
 select * from tb_personagem inner join tb_classe 
-on tb_classe.id = tb_personagem.id;
+on tb_classe.id = tb_personagem.classe_id;
 
 -- faça um select onde traga todos os personagens de uma classe específica.
 select * from tb_personagem inner join tb_classe 
-on tb_classe.id = tb_personagem.id where tb_classe.id = 2;
+on tb_classe.id = tb_personagem.classe_id where tb_classe.id = 2;
